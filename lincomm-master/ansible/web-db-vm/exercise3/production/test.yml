@@ -1,0 +1,9 @@
+---
+- hosts: web1
+  sudo: yes
+  tasks:
+    - name: install psackage
+      yum: name=vsftpd state=present
+    - name: restart 
+      command: shutdown -r now
+

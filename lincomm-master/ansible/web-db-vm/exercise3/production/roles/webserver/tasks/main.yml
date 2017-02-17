@@ -1,0 +1,5 @@
+---
+# tasks file for webser  tasks:
+  - name: Stop IPTABLES Now!!
+    service: name=iptables state=stopped
+    
